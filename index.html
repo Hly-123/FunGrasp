@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Physically Plausible Synthesis of Bi-Manual Dexterous Grasping and Articulation.">
-  <meta name="keywords" content="ArtiGrasp">
+        content="GraspXL: Generating Grasping Motions for Diverse Objects at Scale.">
+  <meta name="keywords" content="GraspXL">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ArtiGrasp: Physically Plausible Synthesis of Bi-Manual Dexterous Grasping and Articulation</title>
+  <title>GraspXL: Generating Grasping Motions for Diverse Objects at Scale</title>
 
   </script>
 
@@ -44,27 +44,20 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">ArtiGrasp: Physically Plausible Synthesis of Bi-Manual Dexterous Grasping and Articulation</h1>
+          <h1 class="title is-1 publication-title">GraspXL: Generating Grasping Motions for Diverse Objects at Scale</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://zdchan.github.io/">Hui Zhang</a><sup>1,2*</sup>,</span>
+              <a href="https://zdchan.github.io/">Hui Zhang</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://ait.ethz.ch/people/sammyc">Sammy Christen</a><sup>1*</sup>,</span>
+              <a href="https://ait.ethz.ch/people/sammyc">Sammy Christen</a><sup>1</sup>,</span>
             <span class="author-block">
               <a href="https://ait.ethz.ch/people/zfan">Zicong Fan</a><sup>1,2</sup>,</span>
             </span>
             <span class="author-block">
-              <a href="https://ait.ethz.ch">Luocheng Zheng</a><sup>1</sup>,</span>
-            </span>
-            <br>
-            <span class="author-block">
-              <a href="https://www.railab.kaist.ac.kr/sections/members">Jemin Hwangbo</a><sup>3</sup>,</span>
-            </span>
-            <span class="author-block">
-              <a href="https://ait.ethz.ch/people/song">Jie Song</a><sup>1</sup>,</span>
-            </span>
-            <span class="author-block">
               <a href="https://ait.ethz.ch/people/hilliges">Otmar Hilliges</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://ait.ethz.ch/people/song">Jie Song</a><sup>1,3</sup>,</span>
             </span>
           </div>
           <div class="is-size-5 publication-authors">
@@ -72,22 +65,19 @@
             <br>
             <span class="author-block"><sup>2</sup>Max Planck Institute for Intelligent Systems, Tübingen, Germany</span>
             <br>
-            <span class="author-block"><sup>3</sup>Department of Mechanical Engineering, KAIST, Korea </span>
-          </div>
-          
-          <div class="is-size-5">
-              *Equal Contribution
+            <span class="author-block"><sup>3</sup>Thrust of Robotics and Autonomous Systems, HKUST(GZ), China </span>
           </div>
 
-           <div class="is-size-5">
+<!--            <div class="is-size-5">
               <span class="author-block">  <b>Accepted by 3DV 2024 as Spotlight Presentation</b></span>
-          </div>
+          </div> -->
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2309.03891.pdf"
+<!--                 <a href="https://arxiv.org/pdf/2309.03891.pdf" -->
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -97,7 +87,8 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://youtu.be/L9KJ57y2ThI"
+<!--                 <a href="https://youtu.be/L9KJ57y2ThI" -->
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -127,7 +118,7 @@
 <!--              </span>-->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/zdchan/artigrasp"
+                <a href="https://github.com/zdchan/graspxl"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -156,15 +147,15 @@
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
           <video id="teaser" controls height="100%">
-            <source src="https://files.ait.ethz.ch/projects/artigrasp/artigrasp_video.mp4"
+<!--             <source src="https://files.ait.ethz.ch/projects/artigrasp/artigrasp_video.mp4" -->
+            <source src=""
                     type="video/mp4">
 <!--             <source src="https://drive.google.com/file/d/1HXg8o0jKrpw9bgqRx2dmX7TU1NboT5OM/view?usp=sharing"
                     type="video/mp4"> -->
           </video>
         </div>
         <h2 class="subtitle has-text-centered">
-            ArtiGrasp is a method to synthesize physically plausible bi-manual manipulation. It can generate motion sequences
-such as grasping and relocating an object with one or two hands, and opening it to a target articulation angle. 
+            GraspXL is a method that can synthesize objective-driven grasping motions for 500k+ objects, which can be deployed on different robot hands and generated or reconstructed objects. 
         </h2>
       </div>
     </div>
@@ -179,8 +170,7 @@ such as grasping and relocating an object with one or two hands, and opening it 
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present ArtiGrasp, a novel method to synthesize bi-manual hand-object interactions that include grasping and articulation. This task is challenging due to the diversity of the global wrist motions and the precise finger control that are necessary to articulate objects. ArtiGrasp leverages reinforcement learning and physics simulations to train a policy that controls the global and local hand pose. Our framework unifies grasping and articulation within a single policy guided by a single hand pose reference. Moreover, to facilitate the training of the precise finger control required for articulation, we present a learning curriculum with increasing difficulty. It starts with single-hand manipulation of stationary objects and continues with multi-agent training including both hands and non-stationary objects. To evaluate our method, we introduce Dynamic Object Grasping and Articulation, a task that involves bringing an object into a target articulated pose. This task requires grasping, relocation, and articulation. We show our method's efficacy towards this task. We further demonstrate that our method can generate motions with noisy hand-object pose estimates from an off-the-shelf image-based regressor.
-          </p>
+            Human hands possess the dexterity to interact with diverse objects such as grasping specific parts of the objects and/or approaching them from desired directions. More importantly, humans can grasp objects of any shape without object-specific skills. Recent works synthesize grasping motions following single objectives such as a desired approach heading direction or a grasping area. Moreover, they usually rely on expensive 3D hand-object data during training and inference, which limits their capability to synthesize grasping motions for unseen objects at scale. In this paper, we unify the generation of hand-object grasping motions across multiple motion objectives, diverse object shapes and dexterous hand morphologies in a policy learning framework GraspXL. The objectives are composed of the graspable area, heading direction during approach, wrist rotation, and hand position. Without requiring any 3D hand-object interaction data, our policy trained with 58 objects can robustly synthesize diverse grasping motions for more than 500k unseen objects with a success rate of 82.2%. At the same time, the policy adheres to objectives, which enables the generation of diverse grasps per object. Moreover, we show that our framework can be deployed to different dexterous hands and work with reconstructed or generated objects. We quantitatively and qualitatively evaluate our method to show the efficacy of our approach. Our model and code will be available.          </p>
         </div>
       </div>
     </div>
