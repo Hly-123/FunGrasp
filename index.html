@@ -237,7 +237,7 @@
 
 
       
-<section class="hero is-light is-small">
+<!-- <section class="hero is-light is-small">
   <h2 class="title is-3 has-text-centered">GraspXL Results</h2>
   <div class="hero-body">
     <div class="container">
@@ -278,9 +278,87 @@
         (GraspXL can generate grasping motions for 500k+ objects, generate diverse motions for the same object according to objectives, and be applied on different dexterous hands.)
     </h2>
   </div>
+</section> -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+  <h3 class="title is-3 has-text-centered">Results Diversity</h3>
+    <div class="columns is-centered">
+    <div class="column is-full-width">
+      <div class="columns is-centered">
+        
+        <!-- Seen Objects -->
+        <div class="column">
+          <div class="content">
+<!--             <h4 class="title is-4 has-text-centered">Different Object (Seen) <br> Same Text Prompt</h4> -->
+            <video id="unzip_video" autoplay controls muted loop playsinline height="100%">
+              <source src="large1.mp4"
+                      type="video/mp4">
+            </video>
+            <p class="has-text-centered">
+              Generate grasping motions for 500k+ unseen objects.
+            </p>
+              </div>
+            </div>    
+        </div>
+      </div>
+
+      <!-- Unseen Objects --> 
+      <div class="column">
+<!--         <h4 class="title is-4 has-text-centered">Different Object (Unseen) <br> Same Text Prompt</h4> -->
+        <div class="columns is-centered">
+          <div class="column content">
+            <video id="multimat-video" autoplay controls muted loop playsinline height="100%">
+              <source src="large2.mp4"
+                      type="video/mp4">
+            </video>
+           <p class="has-text-centered">
+              Generate grasping motions for 500k+ unseen objects.
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+    
+        <!-- Diversity 1 -->
+        <div class="columns is-centered">
+        <div class="column is-full-width">
+        <div class="columns is-centered">
+        <div class="column">
+          <div class="content">
+<!--             <h4 class="title is-4 has-text-centered">Same Object Same Text Prompts</h4> -->
+            <video id="unzip_video" autoplay controls muted loop playsinline height="100%">
+              <source src="objective.mp4"
+                      type="video/mp4">
+            </video>
+            <p class="has-text-centered">
+              Generate diverse motions for the same object according to diverse ojectives.
+            </p>
+              </div>
+            </div>    
+
+
+
+      <!-- Diversity 2 --> 
+      <div class="column">
+        <h4 class="title is-4 has-text-centered">Same Object Different Text Prompts</h4>
+        <div class="columns is-centered">
+          <div class="column content">
+            <video id="multimat-video" autoplay controls muted loop playsinline height="100%">
+              <source src="diverse.mp4"
+                      type="video/mp4">
+            </video>
+            <p class="has-text-centered">
+              Generate diverse motions for the same object according to diverse ojectives.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
 </section>
-
-
       
 
 <section class="section" id="BibTeX">
