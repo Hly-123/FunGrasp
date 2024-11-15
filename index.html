@@ -128,7 +128,7 @@
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code/Data</span>
+                  <span>Code(soon)</span>
                   </a>
               </span>
 <!--            </div>-->
@@ -158,9 +158,9 @@
                     type="video/mp4"> -->
           </video>
         </div>
-        <h2 class="subtitle has-text-centered">
+<!--         <h2 class="subtitle has-text-centered">
             GraspXL is a method that can synthesize objective-driven grasping motions for 500k+ objects, which can be deployed on different robot hands and generated or reconstructed objects. 
-        </h2>
+        </h2> -->
       </div>
     </div>
   </div>
@@ -174,8 +174,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Human hands possess the dexterity to interact with diverse objects such as grasping specific parts of the objects and/or approaching them from desired directions. More importantly, humans can grasp objects of any shape without object-specific skills. Recent works synthesize grasping motions following single objectives such as a desired approach heading direction or a grasping area. Moreover, they usually rely on expensive 3D hand-object data during training and inference, which limits their capability to synthesize grasping motions for unseen objects at scale. In this paper, we unify the generation of hand-object grasping motions across multiple motion objectives, diverse object shapes and dexterous hand morphologies in a policy learning framework GraspXL. The objectives are composed of the graspable area, heading direction during approach, wrist rotation, and hand position. Without requiring any 3D hand-object interaction data, our policy trained with 58 objects can robustly synthesize diverse grasping motions for more than 500k unseen objects with a success rate of 82.2%. At the same time, the policy adheres to objectives, which enables the generation of diverse grasps per object. Moreover, we show that our framework can be deployed to different dexterous hands and work with reconstructed or generated objects. We quantitatively and qualitatively evaluate our method to show the efficacy of our approach. Our model and code are released.          </p>
-        </div>
+            Functional grasping is essential for humans to perform specific tasks, such as grasping a pair of scissors by the finger holes to cut materials or by the blade to safely hand them over. Enabling dexterous robot hands to replicate functional grasping capabilities is crucial for their deployment in the real world, allowing them to accomplish a diverse range of tasks. Recent research in dexterous grasping has primarily focused on achieving stable power grasps, often overlooking task- and object-specific functional grasping poses. In this paper, we introduce <b>FunGrasp</b>, a system that enables functional dexterous robot grasping across various robot hands and performs one-shot transfer to unseen objects. Our approach takes as input a single RGBD image of a functional human grasping pose. We estimate the hand pose from this image and transfer it to different robotic hand morphologies via a human-to-robot (H2R) grasp retargeting module. Guided by the retargeted grasping poses, we train a reinforcement learning policy in simulation to generate dynamic grasping sequences. To achieve robust sim-to-real transfer, we employ several techniques, including privileged learning, system identification, domain randomization, and gravity compensation. In our experiments, we demonstrate that our system enables functional grasping of unseen objects using single RGBD images and can be successfully deployed across various dexterous robot hands in both simulation and real-world scenarios. The significance of the components of our system is validated through comprehensive ablation studies. We will release the code to facilitate future research.        </div>
       </div>
     </div>
     <!--/ Abstract. -->
